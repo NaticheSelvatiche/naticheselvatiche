@@ -1,0 +1,8 @@
+*.code-workspace
+how-to.txt
+_site
+.jekyll-metadata
+Gemfile.lock
+*.gem
+.bundle
+vendor

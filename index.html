@@ -5,17 +5,19 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Fractal by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
 
-		<!-- Header -->
-			<header id="header">
+<head>
+	<title>Natiche Selvatiche</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- <header id="header">
 				<div class="content">
 					<h1><a href="#">Fractal</a></h1>
 					<p>Just a simple, single page responsive<br />
@@ -25,47 +27,220 @@
 						<li><a href="#one" class="button icon solid fa-chevron-down scrolly">Learn More</a></li>
 					</ul>
 				</div>
+
 				<div class="image phone"><div class="inner"><img src="images/screen.jpg" alt="" /></div></div>
-			</header>
 
-		<!-- One -->
-			<section id="one" class="wrapper style2 special">
-				<header class="major">
-					<h2>Sed ipsum magna lorem tempus amet<br />
-					vehicula et gravida elementum</h2>
-				</header>
-				<ul class="icons major">
-					<li><span class="icon solid fa-camera-retro"><span class="label">Shoot</span></span></li>
-					<li><span class="icon solid fa-sync"><span class="label">Process</span></span></li>
-					<li><span class="icon solid fa-cloud"><span class="label">Upload</span></span></li>
-				</ul>
+
+			</header> -->
+
+	<!-- class="image" -->
+	<div id="banner"><img src="images/banner.png" alt="" width="100%" /></div>
+
+	<section id="embed_twitch" class="wrapper style2 special">
+		<div id="twitch-embed"></div>
+
+		<!-- Load the Twitch embed script -->
+		<script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+		<!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+		<script type="text/javascript">
+			new Twitch.Embed("twitch-embed", {
+				width: "80%",
+				height: "500",
+				channel: "naticheselvatiche",
+				// only needed if your site is also embedded on embed.example.com and othersite.example.com 
+				// parent: ["embed.example.com", "othersite.example.com"]
+			});
+		</script>
+	</section>
+
+
+
+	<section id="canali" class="wrapper style2 special">
+		<header class="major">
+			<h2>Seguici sui nostri canali</h2>
+		</header>
+		<ul class="icons major">
+			<li>
+				<a href="https://www.twitch.tv/naticheselvatiche">
+					<span class="icon brands fa-twitch">
+						<span class="label">NaticheSelvatiche on Twitch</span>
+					</span>
+				</a>
+			</li>
+			<!-- TODO: in case of new link after X subscribers, change with the new one-->
+			<li>
+				<a href="https://www.youtube.com/channel/UCMgCS9P6ck0ylKQX6nkS60Q">
+					<span class="icon brands fa-youtube">
+						<span class="label">NaticheSelvatiche on YouTube</span>
+					</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+
+
+
+	<section id="format" class="wrapper">
+		<div class="inner alt">
+			<section id="quizzone" class="spotlight">
+				<div class="image"><img src="images/logo_selvatiquiz.png" alt="" /></div>
+				<div class="content">
+					<h2><b>SELVATIQUIZ</b><br />Domenica dalle 17:30</h2>
+					<!-- <p>Una gara aperta a tutti, con tanti giochi diversi e ospiti a sorpresa</p> -->
+					<p>Una gara aperta a tutti gli streamer e talvolta anche alla chat</p>
+				</div>
 			</section>
+			<section id="live_show" class="spotlight">
+				<div class="image"><img src="images/logo_live_show_wall.png" alt="" /></div>
+				<div class="content">
+					<h2><b>The Natiche Selvatiche Live Show</b><br />Giovedì dalle 22:00</h2>
+					<!-- <p>La rubrica che esplora i meandri di Twitch e dei fenomeni del web</p> -->
+					<p>Segui le Natiche Selvatiche alla scoperta delle notizie più curiose e dei video piu incredibili provenienti da tutto il mondo</p>
+				</div>
+			</section>
+			<section id="milionario" class="spotlight">
+				<div class="image"><img src="images/logo_selvatiquiz.png" alt="" /></div>
+				<div class="content">
+					<h2><b>SELVATIQUIZ: Il Milionario</b><br />Martedì dalle 22:00</h2>
+					<!-- <p>I nostri ospiti si alternano nella nota scalata verso il milione.</p> -->
+					<p>Una sfida all'ultima domanda tra gli streamer di Just Chatting; chi vincerà il titolo di super campione?</p>
 
-		<!-- Two -->
-			<section id="two" class="wrapper">
-				<div class="inner alt">
-					<section class="spotlight">
-						<div class="image"><img src="images/pic01.jpg" alt="" /></div>
-						<div class="content">
-							<h3>Magna sed ultrices</h3>
-							<p>Morbi mattis ornare ornare. Duis quam turpis, gravida at leo elementum elit fusce accumsan dui libero, quis vehicula lectus ultricies eu. In convallis amet leo non sapien iaculis efficitur consequat lorem ipsum.</p>
+					<div class="table-wrapper">
+						<div class="table-scroll">
+							<table id="classifica_milionario">
+								<thead>
+									<tr>
+										<th>Rank</th>
+										<th>Giocatore</th>
+										<th>Punteggio</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td><a href="https://www.twitch.tv/bugalalla">Bugalalla</a></td>
+										<td>1.000.000</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td><a href="https://www.twitch.tv/juststark80">Juust</a></td>
+										<td>32.000</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td><a href="https://www.twitch.tv/nimphalis">Nimphalis</a></td>
+										<td>32.000</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td><a href="https://www.twitch.tv/deivontwitch">Deivontwitch</a></td>
+										<td>32.000</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td><a href="https://www.twitch.tv/rap_ladies">Rap Ladies - Giada</a></td>
+										<td>32.000</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td><a href="https://www.twitch.tv/rap_ladies">Rap Ladies - Noemi</a></td>
+										<td>1.000</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td><a href="https://www.twitch.tv/venusgrl">Venusgrl</a></td>
+										<td>1.000</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td><a href="https://www.twitch.tv/glynevm">Glynevm</a></td>
+										<td>1.000</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td><a href="https://www.twitch.tv/kevinskully">KevinSkully</a></td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td><a href="https://www.twitch.tv/mayentropia">Mayentropia</a></td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td><a href="https://www.twitch.tv/gazen27">Gazen27</a></td>
+										<td>0</td>
+									</tr>									
+								</tbody>
+							</table>
 						</div>
-					</section>
-					<section class="spotlight">
-						<div class="image"><img src="images/pic02.jpg" alt="" /></div>
-						<div class="content">
-							<h3>Ultrices nullam aliquam</h3>
-							<p>Morbi mattis ornare ornare. Duis quam turpis, gravida at leo elementum elit fusce accumsan dui libero, quis vehicula lectus ultricies eu. In convallis amet leo non sapien iaculis efficitur consequat lorem ipsum.</p>
-						</div>
-					</section>
-					<section class="spotlight">
-						<div class="image"><img src="images/pic03.jpg" alt="" /></div>
-						<div class="content">
-							<h3>Aliquam sed magna</h3>
-							<p>Morbi mattis ornare ornare. Duis quam turpis, gravida at leo elementum elit fusce accumsan dui libero, quis vehicula lectus ultricies eu. In convallis amet leo non sapien iaculis efficitur consequat lorem ipsum.</p>
-						</div>
-					</section>
-					<section class="special">
+					</div>
+
+				</div>
+			</section>
+		</div>
+	</section>
+
+
+
+
+
+	<div hidden id="hide_characters_div">
+		<section id="personaggi" class="wrapper">
+			<div class="inner alt">
+				<section id="gion" class="spotlight">
+					<div class="image"><img src="images/backup/pic01.jpg" alt="" /></div>
+					<div class="content">
+						<h3>Gion Porchi</h3>
+						<p>Irriverente. Sporco. Disgustoso. Ma alla fine, anche un po' tenero. Insomma… un vero e
+							proprio maiale!
+							<br /><br />
+							Passa le sue giornate ad abbuffarsi e bere tisane alla canapa. E' lo spirito irriverente del
+							gruppo, spesso senza freni. Dice quello che pensa, senza farsi troppi problemi. Basta
+							dissociarsi!
+							<br /><br />
+							Appassionato di gaming "vecchia scuola", è solito fare improvvisate in streaming per giocare
+							a cose che non interessano più a nessuno.</p>
+					</div>
+				</section>
+				<section id="ing" class="spotlight">
+					<div class="image"><img src="images/backup/pic02.jpg" alt="" /></div>
+					<div class="content">
+						<h3>Ing. Scoiattolo</h3>
+						<p>Il competitivo del gruppo.<br /><br />
+							Se vuoi migliorare in un gioco o discutere di ottimizzazione, lui è il personaggio che fa
+							per te.</p>
+					</div>
+				</section>
+				<section id="swaro" class="spotlight">
+					<div class="image"><img src="images/backup/pic03.jpg" alt="" /></div>
+					<div class="content">
+						<h3>Swaro Seduto</h3>
+						<p>Un torello dal cuore tenero, con un occhio di riguardo per umani e verdure crude. Annovera
+							una serie di titoli di studio più o meno utili nel suo palmares e, a detta sua, un numero
+							ancor più vasto di passatempi di curioso interesse tra i quali pittura a sugo di pomodoro su
+							tela, pesca di ravanelli e scherma.<br /><br />
+							Si dice che le bovine perdano la testa per lui grazie al suo charme ammaliante ed un alito
+							sempre profumato al foraggio pregiato, ma lui non conferma né smentisce da inguaribile
+							modesto com'è.<br /><br />
+							La sua passione per il gaming in generale verte spesso su picchiaduro ma anche platform e
+							giochi indie.</p>
+					</div>
+				</section>
+				<section id="prof" class="spotlight">
+					<div class="image"><img src="images/backup/prof_mini.png" alt="" /></div>
+					<div class="content">
+						<h3>Prof S. Hall</h3>
+						<p>Lo scienziato responsabile di aver reso questo canale uno zoo.<br />
+							Amante soprattutto del suo lavoro, difficilmente si concede un po' di svago, ma di tanto in
+							tanto trova il tempo per fare zapping tra i canali Twitch o per una partita in compagnia
+							degli altri personaggi.<br />
+							La sua innata curiosità lo porta spesso a interessarsi alla lore (NdR la storia) dei giochi,
+							motivo per cui predilige i (MMO)RPG.</p>
+					</div>
+				</section>
+				<!-- <section class="special">
 						<ul class="icons labeled">
 							<li><span class="icon solid fa-camera-retro"><span class="label">Ipsum lorem accumsan</span></span></li>
 							<li><span class="icon solid fa-sync"><span class="label">Sed vehicula elementum</span></span></li>
@@ -73,12 +248,12 @@
 							<li><span class="icon solid fa-code"><span class="label">Lorem nullam tempus</span></span></li>
 							<li><span class="icon solid fa-desktop"><span class="label">Adipiscing amet sapien</span></span></li>
 						</ul>
-					</section>
-				</div>
-			</section>
-
-		<!-- Three -->
-			<section id="three" class="wrapper style2 special">
+					</section> -->
+			</div>
+		</section>
+	</div>
+	<!-- Three -->
+	<!-- <section id="three" class="wrapper style2 special">
 				<header class="major">
 					<h2>Magna leo sapien gravida</h2>
 					<p>Gravida at leo elementum elit fusce accumsan dui libero, quis vehicula<br />
@@ -88,10 +263,10 @@
 					<li><a href="#" class="button primary icon solid fa-download">Download</a></li>
 					<li><a href="#" class="button">Learn More</a></li>
 				</ul>
-			</section>
+			</section> -->
 
-		<!-- Four -->
-		<!--
+	<!-- Four -->
+	<!--
 			<section id="four" class="wrapper">
 				<div class="inner">
 
@@ -409,23 +584,31 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			</section>
 		-->
 
-		<!-- Footer -->
-			<footer id="footer">
-				<ul class="icons">
-					<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-					<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-				</ul>
-				<p class="copyright">&copy; Untitled. Credits: <a href="http://html5up.net">HTML5 UP</a></p>
-			</footer>
+	<!-- Footer -->
+	<footer id="footer">
+		<ul class="icons">
+			<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
+			<li><a href="https://www.instagram.com/naticheselvatiche/" class="icon brands fa-instagram"><span
+						class="label">Instagram</span></a></li>
+			<li><a href="https://discord.gg/PYUr8bP" class="icon brands fa-discord"><span
+						class="label">Discord</span></a></li>
+			<li><a href="mailto:business@naticheselvatiche.it" class="icon solid fa-envelope"><span
+						class="label">Business</span></a></li>
+			<li><a href="mailto:info@naticheselvatiche.it" class="icon solid fa-info-circle"><span
+						class="label">Info</span></a></li>
+		</ul>
+		<!-- <p class="copyright">&copy; Untitled. Credits: <a href="http://html5up.net">HTML5 UP</a></p> -->
+	</footer>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
 
-	</body>
+</body>
+
 </html>

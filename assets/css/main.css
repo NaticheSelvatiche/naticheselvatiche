@@ -2828,11 +2828,20 @@ input, select, textarea {
 	.table-wrapper {
 		-webkit-overflow-scrolling: touch;
 		overflow-x: auto;
+		max-height: 300px;
 	}
+
+	/* .table-scroll {
+		overflow:auto;
+		margin-top:20px;
+	} */
 
 	table {
 		margin: 0 0 2em 0;
 		width: 100%;
+		/* margin-left: 25%; */
+		counter-reset: row-num; /* required for automatic row number */
+		/* position: relative; */
 	}
 
 		table tbody tr {
@@ -2840,13 +2849,23 @@ input, select, textarea {
 			border-width: 1px;
 			border-left: 0;
 			border-right: 0;
+			counter-increment: row-num; /* required for automatic row number */
 		}
+
+		/* manage first <td> inside a <tr> as rownum */
+		/* table tr td:first-child::before {
+			content: counter(row-num) "";
+		} */
 
 		table td {
 			padding: 0.75em 0.75em;
 		}
 
 		table th {
+			/* position: -webkit-sticky; */
+			position: sticky;
+			top: 0;
+			background: white;
 			font-size: 0.9em;
 			font-weight: bold;
 			padding: 0 0.75em 0.75em 0.75em;
@@ -2856,6 +2875,7 @@ input, select, textarea {
 		table thead {
 			border-bottom-style: solid;
 			border-bottom-width: 2px;
+
 		}
 
 		table tfoot {

@@ -5,13 +5,16 @@
     Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
+
 <head>
     <title>Classifiche - Natiche Selvatiche</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
+
 <body class="is-preload">
 
     <!-- Page Wrapper -->
@@ -46,14 +49,17 @@
             <header>
                 <div class="inner">
                     <h2>Classifiche</h2>
-                    <p>Qui sotto troverai la lista completa dei punteggi ottenuti dai nostri ospiti durante le puntate della <i>Ruota della Fortuna</i> e di <i>Chi Vuol Essere Milionario</i>.</p>
+                    <p>Qui sotto troverai la lista completa dei punteggi ottenuti dai nostri ospiti durante le puntate
+                        della <i>Ruota della Fortuna</i> e di <i>Chi Vuol Essere Milionario</i>.</p>
                 </div>
             </header>
 
             <!-- Content -->
             <div class="wrapper">
                 <div class="inner">
-                    <a name="rdf"><h3>La ruota della fortuna</h3></a>
+                    <a name="rdf">
+                        <h3>La ruota della fortuna</h3>
+                    </a>
                     <div class="table-wrapper">
                         <table id="classifica_rdf" class="alt">
                             <thead>
@@ -71,7 +77,29 @@
                 </div>
 
                 <div class="inner">
-                    <a name="milionario"><h3>Il milionario</h3></a>
+                    <a name="puntatutto">
+                        <h3>Puntatutto</h3>
+                    </a>
+                    <div class="table-wrapper">
+                        <table id="classifica_puntatutto" class="alt">
+                            <thead>
+                                <tr>
+                                    <th>Rank</th>
+                                    <th>Giocatore</th>
+                                    <th>Punteggio</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- to be filled with JavaScript-->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="inner">
+                    <a name="milionario">
+                        <h3>Il milionario</h3>
+                    </a>
                     <div class="table-wrapper">
                         <table id="classifica_milionario" class="alt">
                             <thead>
@@ -99,13 +127,21 @@
                 <h2 class="major">Contatti</h2>
                 <p></p>
                 <ul class="contact">
-                    <li class="icon brands fa-twitch"><a href="https://www.twitch.tv/naticheselvatiche/" target="_blank">Twitch</a></li>
-                    <li class="icon brands fa-telegram"><a href="https://t.me/joinchat/RbPdWEugRDHXmjtsrIUG_g/" target="_blank">Telegram</a></li>
-                    <li class="icon brands fa-discord"><a href="https://discord.gg/PYUr8bP" target="_blank">Discord</a></li>
-                    <li class="icon brands fa-youtube"><a href="https://www.youtube.com/channel/UCMgCS9P6ck0ylKQX6nkS60Q/" target="_blank">YouTube</a></li>
-                    <li class="icon brands fa-instagram"><a href="https://www.instagram.com/naticheselvatiche/" target="_blank">Instagram</a></li>
-                    <li class="icon solid fa-envelope"><a href="mailto:business@naticheselvatiche.it" target="_blank">Mail business</a></li>
-                    <li class="icon solid fa-info-circle"><a href="mailto:info@naticheselvatiche.it" target="_blank">Mail informazioni</a></li>
+                    <li class="icon brands fa-twitch"><a href="https://www.twitch.tv/naticheselvatiche/"
+                            target="_blank">Twitch</a></li>
+                    <li class="icon brands fa-telegram"><a href="https://t.me/joinchat/RbPdWEugRDHXmjtsrIUG_g/"
+                            target="_blank">Telegram</a></li>
+                    <li class="icon brands fa-discord"><a href="https://discord.gg/PYUr8bP" target="_blank">Discord</a>
+                    </li>
+                    <li class="icon brands fa-youtube"><a
+                            href="https://www.youtube.com/channel/UCMgCS9P6ck0ylKQX6nkS60Q/" target="_blank">YouTube</a>
+                    </li>
+                    <li class="icon brands fa-instagram"><a href="https://www.instagram.com/naticheselvatiche/"
+                            target="_blank">Instagram</a></li>
+                    <li class="icon solid fa-envelope"><a href="mailto:business@naticheselvatiche.it"
+                            target="_blank">Mail business</a></li>
+                    <li class="icon solid fa-info-circle"><a href="mailto:info@naticheselvatiche.it"
+                            target="_blank">Mail informazioni</a></li>
                 </ul>
                 <ul class="copyright">
                     <li>&copy; Natiche Selvatiche. All rights reserved.</li>
@@ -122,9 +158,9 @@
         function loadRankings(filename, tableBody) {
             const request = new XMLHttpRequest();
             request.open("GET", filename, true);
-            request.onload = function() {
-                    const json = JSON.parse(request.responseText);
-                    populateRankings(json, tableBody);
+            request.onload = function () {
+                const json = JSON.parse(request.responseText);
+                populateRankings(json, tableBody);
             };
             request.send(null);
         }
@@ -151,8 +187,9 @@
         }
 
         document.addEventListener("DOMContentLoaded", () => { loadRankings("data/classifica-rdf.json", document.querySelector("#classifica_rdf > tbody")); });
+        document.addEventListener("DOMContentLoaded", () => { loadRankings("data/classifica-puntatutto.json", document.querySelector("#classifica_puntatutto > tbody")); });
         document.addEventListener("DOMContentLoaded", () => { loadRankings("data/classifica-milionario.json", document.querySelector("#classifica_milionario > tbody")); });
-            
+
     </script>
 
     <script src="assets/js/jquery.min.js"></script>
@@ -165,4 +202,5 @@
 
 
 </body>
+
 </html>

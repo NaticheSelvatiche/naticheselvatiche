@@ -6,201 +6,214 @@
 -->
 <html>
 
-<head>
-    <title>Classifiche - Natiche Selvatiche</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript>
-        <link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-</head>
+    <head>
+        <title>Classifiche - Natiche Selvatiche</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript>
+            <link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    </head>
 
-<body class="is-preload">
+    <body class="is-preload">
 
-    <!-- Page Wrapper -->
-    <div id="page-wrapper">
+        <!-- Page Wrapper -->
+        <div id="page-wrapper">
 
-        <!-- Header -->
-        <header id="header">
-            <h1><a href="index.html">Natiche Selvatiche</a></h1>
-            <nav>
-                <a href="#menu">Menu</a>
-            </nav>
-        </header>
-
-        <!-- Menu -->
-        <nav id="menu">
-            <div class="inner">
-                <h2>Menu</h2>
-                <ul class="links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="classifiche.html">Classifiche</a></li>
-                    <li><a href="game.html">Gioco</a></li>
-                    <!--<li><a href="faq.html">F.A.Q.</a></li>-->
-                    <!--<li><a href="#">Log In</a></li>-->
-                    <!--<li><a href="#">Sign Up</a></li>-->
-                </ul>
-                <a href="#" class="close">Close</a>
-            </div>
-        </nav>
-
-        <!-- Wrapper -->
-        <section id="wrapper">
-            <header>
-                <div class="inner">
-                    <h2>Classifiche</h2>
-                    <p>Qui sotto troverai la lista completa dei punteggi ottenuti dai nostri ospiti durante le puntate
-                        della <i>Ruota della Fortuna</i> e di <i>Chi Vuol Essere Milionario</i>.</p>
-                </div>
+            <!-- Header -->
+            <header id="header">
+                <h1><a href="index.html">Natiche Selvatiche</a></h1>
+                <nav>
+                    <a href="#menu">Menu</a>
+                </nav>
             </header>
 
-            <!-- Content -->
-            <div class="wrapper">
+            <!-- Menu -->
+            <nav id="menu">
                 <div class="inner">
-                    <a name="rdf">
-                        <h3>La ruota della fortuna</h3>
-                    </a>
-                    <div class="table-wrapper">
-                        <table id="classifica_rdf" class="alt">
-                            <thead>
-                                <tr>
-                                    <th>Rank</th>
-                                    <th>Giocatore</th>
-                                    <th>Punteggio</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <!-- to be filled with JavaScript-->
-                            </tbody>
-                        </table>
+                    <h2>Menu</h2>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="classifiche.html">Classifiche</a></li>
+                        <li><a href="game.html">Gioco</a></li>
+                        <!--<li><a href="faq.html">F.A.Q.</a></li>-->
+                        <!--<li><a href="#">Log In</a></li>-->
+                        <!--<li><a href="#">Sign Up</a></li>-->
+                    </ul>
+                    <a href="#" class="close">Close</a>
+                </div>
+            </nav>
+
+            <!-- Wrapper -->
+            <section id="wrapper">
+                <header>
+                    <div class="inner">
+                        <h2>Classifiche</h2>
+                        <p>Qui sotto troverai la lista completa dei punteggi ottenuti dai nostri ospiti durante le puntate
+                            della <i>Ruota della Fortuna</i> e di <i>Chi Vuol Essere Milionario</i>.</p>
+                    </div>
+                </header>
+
+                <!-- Content -->
+                <div class="wrapper">
+                    <div class="inner">
+                        <a name="rdf">
+                            <h3>La ruota della fortuna</h3>
+                        </a>
+                        <div class="table-wrapper">
+                            <table id="classifica_rdf" class="alt">
+                                <thead>
+                                    <tr>
+                                        <th>Rank</th>
+                                        <th>Giocatore</th>
+                                        <th>Punteggio</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- to be filled with JavaScript-->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="inner">
+                        <a name="puntatutto">
+                            <h3>Puntatutto</h3>
+                        </a>
+                        <div class="table-wrapper">
+                            <table id="classifica_puntatutto" class="alt">
+                                <thead>
+                                    <tr>
+                                        <!-- <th>Rank</th> -->
+                                        <th>Giocatore</th>
+                                        <th>Miglior Punteggio</th>
+                                        <th>Totale</th>
+                                        <th>Vittorie</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- to be filled with JavaScript-->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="inner">
+                        <a name="milionario">
+                            <h3>Il milionario</h3>
+                        </a>
+                        <div class="table-wrapper">
+                            <table id="classifica_milionario" class="alt">
+                                <thead>
+                                    <tr>
+                                        <th>Giocatore</th>
+                                        <th>Punteggio</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- to be filled with JavaScript-->
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
 
-                <div class="inner">
-                    <a name="puntatutto">
-                        <h3>Puntatutto</h3>
-                    </a>
-                    <div class="table-wrapper">
-                        <table id="classifica_puntatutto" class="alt">
-                            <thead>
-                                <tr>
-                                    <th>Rank</th>
-                                    <th>Giocatore</th>
-                                    <th>Punteggio</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <!-- to be filled with JavaScript-->
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+            </section>
 
-                <div class="inner">
-                    <a name="milionario">
-                        <h3>Il milionario</h3>
-                    </a>
-                    <div class="table-wrapper">
-                        <table id="classifica_milionario" class="alt">
-                            <thead>
-                                <tr>
-                                    <th>Giocatore</th>
-                                    <th>Punteggio</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <!-- to be filled with JavaScript-->
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
+        </div>
 
-
-
-
-        </section>
-
-        <!-- Footer -->
-        <section id="footer">
-            <div class="inner">
-                <h2 class="major">Contatti</h2>
-                <p></p>
-                <ul class="contact">
-                    <li class="icon brands fa-twitch"><a href="https://www.twitch.tv/naticheselvatiche/"
-                            target="_blank">Twitch</a></li>
-                    <li class="icon brands fa-telegram"><a href="https://t.me/joinchat/RbPdWEugRDHXmjtsrIUG_g/"
-                            target="_blank">Telegram</a></li>
-                    <li class="icon brands fa-discord"><a href="https://discord.gg/PYUr8bP" target="_blank">Discord</a>
-                    </li>
-                    <li class="icon brands fa-youtube"><a
-                            href="https://www.youtube.com/channel/UCMgCS9P6ck0ylKQX6nkS60Q/" target="_blank">YouTube</a>
-                    </li>
-                    <li class="icon brands fa-instagram"><a href="https://www.instagram.com/naticheselvatiche/"
-                            target="_blank">Instagram</a></li>
-                    <li class="icon solid fa-envelope"><a href="mailto:business@naticheselvatiche.it"
-                            target="_blank">Mail business</a></li>
-                    <li class="icon solid fa-info-circle"><a href="mailto:info@naticheselvatiche.it"
-                            target="_blank">Mail informazioni</a></li>
-                </ul>
-                <ul class="copyright">
-                    <li>&copy; Natiche Selvatiche. All rights reserved.</li>
-                    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-                </ul>
-            </div>
-        </section>
-
-    </div>
-
-    <!-- Scripts -->
-    <script>
-        // TODO: move this script to a separate file
-        function loadRankings(filename, tableBody) {
-            const request = new XMLHttpRequest();
-            request.open("GET", filename, true);
-            request.onload = function () {
-                const json = JSON.parse(request.responseText);
-                populateRankings(json, tableBody);
-            };
-            request.send(null);
-        }
-
-        function populateRankings(json, tableBody) {
-            // clears out existing table data
-            while (tableBody.firstChild) {
-                tableBody.removeChild(tableBody.firstChild);
+        <!-- Scripts -->
+        <script>
+            // TODO: move this script to a separate file
+            function loadRankings(filename, tableBody) {
+                const request = new XMLHttpRequest();
+                request.open("GET", filename, true);
+                request.onload = function () {
+                    const json = JSON.parse(request.responseText);
+                    populateRankings(json, tableBody);
+                };
+                request.send(null);
             }
 
-            // populate table
-            json.forEach((row) => {
-                const tr = document.createElement("tr");
-                // TODO: replace this loop with something that handles links to streamers channels
-                row.forEach((cell) => {
-                    const td = document.createElement("td");
-                    td.textContent = cell;
-                    tr.appendChild(td);
+            function populateRankings(json, tableBody) {
+                // clears out existing table data
+                while (tableBody.firstChild) {
+                    tableBody.removeChild(tableBody.firstChild);
+                }
+
+                // populate table
+                json.forEach((row) => {
+                    const tr = document.createElement("tr");
+                    // TODO: replace this loop with something that handles links to streamers channels
+                    row.forEach((cell) => {
+                        const td = document.createElement("td");
+                        td.textContent = cell;
+                        tr.appendChild(td);
+                    });
+
+                    tableBody.appendChild(tr);
+
                 });
+            }
 
-                tableBody.appendChild(tr);
+            document.addEventListener("DOMContentLoaded", () => { loadRankings("data/classifica-rdf.json", document.querySelector("#classifica_rdf > tbody")); });
+            document.addEventListener("DOMContentLoaded", () => { loadRankings("data/classifica-puntatutto.json", document.querySelector("#classifica_puntatutto > tbody")); });
+            document.addEventListener("DOMContentLoaded", () => { loadRankings("data/classifica-milionario.json", document.querySelector("#classifica_milionario > tbody")); });
 
-            });
-        }
+        </script>
 
-        document.addEventListener("DOMContentLoaded", () => { loadRankings("data/classifica-rdf.json", document.querySelector("#classifica_rdf > tbody")); });
-        document.addEventListener("DOMContentLoaded", () => { loadRankings("data/classifica-puntatutto.json", document.querySelector("#classifica_puntatutto > tbody")); });
-        document.addEventListener("DOMContentLoaded", () => { loadRankings("data/classifica-milionario.json", document.querySelector("#classifica_milionario > tbody")); });
+        <footer id="footer">
 
-    </script>
+            <h2 class="major">Contatti</h2>
 
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+            <ul class="icons">
+                <li>
+                    <a href="https://www.twitch.tv/naticheselvatiche/" class="icon brands fa-twitch">
+                        <span class="label">Twitch</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://t.me/joinchat/RbPdWEugRDHXmjtsrIUG_g/" class="icon brands fa-telegram">
+                        <span class="label">Telegram</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://discord.gg/PYUr8bP" class="icon brands fa-discord">
+                        <span class="label">Discord</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCMgCS9P6ck0ylKQX6nkS60Q/" class="icon brands fa-youtube">
+                        <span class="label">YouTube</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/naticheselvatiche/" class="icon brands fa-instagram">
+                        <span class="label">Instagram</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:business@naticheselvatiche.it" class="icon solid fa-envelope">
+                        <span class="label">Business</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:info@naticheselvatiche.it" class="icon solid fa-info-circle">
+                        <span class="label">Info</span>
+                    </a>
+                </li>
+            </ul>
+            
+            <p class="copyright">&copy; Natiche Selvatiche. All rights reserved. Design: <a href="http://html5up.net">HTML5 UP</a></p>
+        </footer>
 
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
 
-
-</body>
+    </body>
 
 </html>
